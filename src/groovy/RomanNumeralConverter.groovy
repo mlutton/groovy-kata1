@@ -7,21 +7,23 @@
  * To change this template use File | Settings | File Templates.
  */
 class RomanNumeralConverter {
+    public String[] romanNumerals = ["V", "I"]
+    public int[] numberList = [5,1]
+
     public String GetValue (int value) {
 
         def buffer = ""
         def remainingValue = value
 
-        if (remainingValue >= 5)
+        for(int i = 0; i < romanNumerals.length; i++)
         {
-            buffer = buffer + "V"
-            remainingValue = remainingValue - 5
-        }
+            def nextNumberToTry = numberList[i]
 
-        while (remainingValue >= 1)
-        {
-            buffer = buffer + "I"
-            remainingValue = remainingValue - 1
+            while (remainingValue >= nextNumberToTry)
+            {
+                buffer = buffer + romanNumerals[i]
+                remainingValue = remainingValue - nextNumberToTry
+            }
         }
 
         return buffer
