@@ -48,4 +48,11 @@ class RomanNumeralConverterTest extends GroovyTestCase {
         result = converter.GetValue(6)
         assert result == "VI"
     }
+
+    @Test public void WhenPassing7ThenResultIsVII()
+    {
+        result = converter.GetValue(7)
+        assert result == "VII"
+    }
+
 }
