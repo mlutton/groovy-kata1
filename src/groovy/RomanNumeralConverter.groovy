@@ -18,7 +18,7 @@ class RomanNumeralConverter {
             remainingValue = remainingValue - 5
         }
 
-        while (remainingValue > 0)
+        while (remainingValue >= 1)
         {
             buffer = buffer + "I"
             remainingValue = remainingValue - 1
