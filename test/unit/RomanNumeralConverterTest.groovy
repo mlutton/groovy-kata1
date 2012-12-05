@@ -30,4 +30,11 @@ class RomanNumeralConverterTest extends GroovyTestCase {
         result = converter.GetValue(2)
         assert result == "II"
     }
+
+    @Test public void WhenPassing3ThenResultIsIII()
+    {
+        result = converter.GetValue(3)
+        assert result == "III"
+    }
+
 }

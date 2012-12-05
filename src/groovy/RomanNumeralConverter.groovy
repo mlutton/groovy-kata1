@@ -10,5 +10,7 @@ class RomanNumeralConverter {
     public String GetValue (int value) {
         if (value == 1)
             return "I"
-        else return "II"
+        else if (value == 2)
+            return "II"
+        else return "III"
     }}
