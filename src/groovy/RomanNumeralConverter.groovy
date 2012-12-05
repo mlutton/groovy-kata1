@@ -12,6 +12,12 @@ class RomanNumeralConverter {
         def buffer = ""
         def remainingValue = value
 
+        if (remainingValue == 5)
+        {
+            buffer = buffer + "V"
+            remainingValue = remainingValue - 5
+        }
+
         while (remainingValue > 0)
         {
             buffer = buffer + "I"
