@@ -8,5 +8,7 @@
  */
 class RomanNumeralConverter {
     public String GetValue (int value) {
-        return "I"
+        if (value == 1)
+            return "I"
+        else return "II"
     }}

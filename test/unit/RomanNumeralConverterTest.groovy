@@ -25,4 +25,9 @@ class RomanNumeralConverterTest extends GroovyTestCase {
         assert result == "I"
     }
 
+    @Test public void WhenPassing2ThenResultIsII()
+    {
+        result = converter.GetValue(2)
+        assert result == "II"
+    }
 }
