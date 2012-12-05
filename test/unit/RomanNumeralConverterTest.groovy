@@ -96,4 +96,16 @@ class RomanNumeralConverterTest extends GroovyTestCase {
         result = converter.GetValue(17)
         assert result == "XVII"
     }
+
+    @Test public void WhenPassing19ThenResultIsXIX()
+    {
+        result = converter.GetValue(19)
+        assert result == "XIX"
+    }
+
+    @Test public void WhenPassing20ThenResultIsXX()
+    {
+        result = converter.GetValue(20)
+        assert result == "XX"
+    }
 }
