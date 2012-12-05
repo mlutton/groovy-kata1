@@ -37,10 +37,10 @@ class RomanNumeralConverterTest extends GroovyTestCase {
         assert result == "III"
     }
 
-    @Test public void WhenPassing5ThenResultIsV()
+    @Test public void WhenPassing4ThenResultIsIV()
     {
-        result = converter.GetValue(5)
-        assert result == "V"
+        result = converter.GetValue(4)
+        assert result == "IV"
     }
 
     @Test public void WhenPassing6ThenResultIsVI()
@@ -61,4 +61,9 @@ class RomanNumeralConverterTest extends GroovyTestCase {
         assert result == "VIII"
     }
 
+    @Test public void WhenPassing9ThenResultIsIX()
+    {
+        result = converter.GetValue(9)
+        assert result == "IX"
+    }
 }

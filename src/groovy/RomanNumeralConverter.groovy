@@ -7,8 +7,8 @@
  * To change this template use File | Settings | File Templates.
  */
 class RomanNumeralConverter {
-    public String[] romanNumerals = ["V", "I"]
-    public int[] numberList = [5,1]
+    public String[] romanNumerals = ["IX", "V", "IV", "I"]
+    public int[] numberList = [9,5,4,1]
 
     public String GetValue (int value) {
 
